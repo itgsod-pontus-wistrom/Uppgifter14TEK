@@ -5,3 +5,8 @@ while i<arr.length
   puts arr[i] + ':' + arr[i + 1].to_s
   i += 2
 end
+
+arr2 = [5,-4,0,12,15]
+
+arr2.map! { |temp| (temp*2).to_s }
+print arr2
