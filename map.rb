@@ -10,3 +10,7 @@ arr2 = [5,-4,0,12,15]
 
 arr2.map! { |temp| (temp*2).to_s }
 print arr2
+
+arr3 = ['a',1,'b',4,'c',5]
+
+arr3.map {|data| puts data.is_a? Intege}
