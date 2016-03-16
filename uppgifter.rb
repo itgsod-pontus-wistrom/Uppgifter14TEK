@@ -28,9 +28,16 @@ p switch(a[0],a[1])
 #Uppgift 3
 
 a = [1,2,3,4]
+def rotate(a)
+i = 1
+b = []
 
-def rotate()
-
+while i < a.length
+  b[i]= a[i-1]
+  i += 1
 end
 
-p rotate()
+b[0] = a[-1]
+  return b
+end
+p rotate(a)
