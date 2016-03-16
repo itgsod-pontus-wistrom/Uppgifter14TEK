@@ -1,6 +1,6 @@
 #Uppgift 1
-a = [1,2,3]
-b = [4,5,6]
+a = [1, 2, 3]
+b = [4, 5, 6]
 c= []
 
 i = 0
@@ -13,31 +13,34 @@ p c
 
 #Uppgift 2
 
-a = [1,2]
+a = [1, 2]
 
-def switch(a,b)
+def switch(a, b)
   arr = []
   arr[0] = b
   arr[1] = a
   return arr
 end
 
-p switch(a[0],a[1])
+p switch(a[0], a[1])
 
 
 #Uppgift 3
 
-a = [1,2,3,4]
+a = [1, 2, 3, 4]
+
 def rotate(a)
-i = 1
-b = []
 
-while i < a.length
-  b[i]= a[i-1]
-  i += 1
-end
+  i = 1
+  b = []
 
-b[0] = a[-1]
+  while i < a.length
+    b[i]= a[i-1]
+    i += 1
+  end
+
+  b[0] = a[-1]
   return b
 end
+
 p rotate(a)
