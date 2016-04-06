@@ -47,3 +47,30 @@ class Vehicle
   end
 
 end
+class Bycycle < Vehicle
+  def initialize(cadence, speed, gear)
+    @speed=speed
+    @gear=gear
+    @cadence=cadence
+  end
+
+  def cadenceUp
+    @cadence+=1
+  end
+
+  def cadenceDown
+    @cadence-=1
+  end
+
+  def printStates
+    puts @cadence
+    puts @speed
+    puts @gear
+
+  end
+end
+
+bike=Bycycle.new(2, 1, 1)
+bike.speedUp
+bike.printStates
+
