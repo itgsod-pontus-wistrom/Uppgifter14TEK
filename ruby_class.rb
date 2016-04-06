@@ -21,4 +21,22 @@ class Square < Rectangle
 end
 square=Square.new(5)
 square.arr
+square2=Square.new(7)
+square2.arr
+
+class Vehicle
+  def initialize(gear, speed)
+    @gear=gear
+    @speed=speed
+  end
+
+  def speedUp
+    speed+=1
+  end
+
+  def applyBreaks
+    speed = speed-1
+  end
+
+end
 
