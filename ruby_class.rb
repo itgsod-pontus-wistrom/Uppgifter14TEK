@@ -31,12 +31,19 @@ class Vehicle
   end
 
   def speedUp
-    speed+=1
+    @speed+=1
   end
 
   def applyBreaks
-    speed = speed-1
+    @speed -=1
+  end
+
+  def changeUp
+    @gear +=1
+  end
+
+  def changeDown
+    @gear -=1
   end
 
 end
-
