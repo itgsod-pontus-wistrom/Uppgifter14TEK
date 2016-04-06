@@ -74,3 +74,31 @@ bike=Bycycle.new(2, 1, 1)
 bike.speedUp
 bike.printStates
 
+class Car < Vehicle
+  def initialize(brand)
+    @brand=brand
+    @rpm=0
+    @light=false
+  end
+
+  def lightOn
+    @light= true
+  end
+
+  def lightOff
+    @light=true
+  end
+
+  def acc
+    @rpm+=500
+  end
+
+  def dcc
+    @rpm-=500
+  end
+end
+
+car=Car.new('BMW')
+car.lightOn
+car.acc
+p car
