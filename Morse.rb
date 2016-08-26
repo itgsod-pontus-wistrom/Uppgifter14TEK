@@ -13,7 +13,7 @@ CODE = {'A'=> '.-',     'B'=> '-...',   'C'=> '-.-.',
         '9'=> '----.'
 }
 
-str = 'Ruby is more elegant than Python'
+str = 'Ruby is more elegant than'
 
 def translate(str,key)
   # Go through str starting from str[0] until str[str.length] = str[-1]
